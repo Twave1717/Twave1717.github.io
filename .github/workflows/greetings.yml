@@ -1,16 +1,18 @@
-name: Greetings
+name: Greetings  #워크플로우 이름입니다.
 
-on: [pull_request_target, issues]
+on: [pull_request_target, issues]  #PR(Pull Request) 또는 issues 발생시 실행
 
-jobs:
-  greeting:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
-    steps:
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Message that will be displayed on users' first issue"
-        pr-message: "Message that will be displayed on users' first pull request"
+jobs: #작업 정의 시작
+  greeting: #작업의 이름 = greetings
+    runs-on: ubuntu-latest  #ubuntu-latest에서 실행
+
+    permissions:  #권한 설정에 관한 내용
+      issues: write  #이슈 수정, 생성 등이 가능
+      pull-requests: write  #PR 수정, 생성 등이 가능
+
+    steps:  #작업 단계별 정의
+      - uses: actions/first-interaction@v1  #actions/first-interaction 사용(첫번째 PR/issue인지 확인하는 기능 있음)
+        with: #이런 일들을 한다.
+          repo-token: ${{ secrets.GITHUB_TOKEN }}  #GitHub 토큰 설정 (security 관련)
+          issue-message: "This is your first issue!"  #첫번째 이슈 대상 메시지 설정
+          pr-message: "This is your first PR(Pull Request)! Nice to meet you XD"  #첫번째 PR 대상 메시지 설정
