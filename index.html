@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ki Yong Jung</title>
+<meta name="description" content="Ki Yong Jung — undergraduate AI researcher at Sungkyunkwan University. Time-series chart understanding, efficient adaptation, and self-evolving AI agents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #222222;
+    --muted: #666666;
+    --line: #e5e5e5;
+    --accent: #0b5cad;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1d;
+      --text: #e6e6e6;
+      --muted: #a0a0a0;
+      --line: #333335;
+      --accent: #6fb1f2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 300 16.5px/1.7 "Roboto", -apple-system, "Apple SD Gothic Neo", sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 64px 20px 80px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  b, strong { font-weight: 500; }
+
+  /* header */
+  .top { display: flex; gap: 32px; align-items: flex-start; }
+  .top img {
+    width: 200px; height: 200px; object-fit: cover;
+    border-radius: 6px; flex-shrink: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,.12);
+  }
+  h1 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.15;
+    margin: 0 0 4px;
+  }
+  h1 .kr { font-size: 20px; color: var(--muted); margin-left: 8px; }
+  .aff { color: var(--muted); margin: 0 0 14px; }
+  .icons { display: flex; gap: 16px; margin: 0 0 18px; }
+  .icons a { color: var(--muted); display: inline-flex; }
+  .icons a:hover { color: var(--accent); }
+  .icons svg { width: 26px; height: 26px; fill: currentColor; }
+
+  h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 52px 0 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 14px; }
+  ul.interests { margin: 0 0 14px; padding-left: 22px; }
+  ul.interests li { margin-bottom: 6px; }
+
+  /* news */
+  ul.news { list-style: none; padding: 0; margin: 0; }
+  ul.news li { display: grid; grid-template-columns: 104px 1fr; gap: 12px; padding: 6px 0; }
+  ul.news .d { font-weight: 500; color: var(--muted); white-space: nowrap; }
+
+  /* publications */
+  ol.pubs { padding-left: 22px; margin: 0; }
+  ol.pubs li { margin-bottom: 18px; padding-left: 4px; }
+  ol.pubs .t { font-weight: 500; }
+  ol.pubs .a { color: var(--muted); }
+  ol.pubs .a u { color: var(--text); text-decoration: underline; text-underline-offset: 2px; font-weight: 500; }
+  ol.pubs .v { font-style: italic; }
+  .note { color: var(--muted); font-size: 14px; margin-top: -4px; }
+
+  /* experience */
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 0 16px; margin-bottom: 14px; }
+  .row .t { font-weight: 500; }
+  .row .d { color: var(--muted); font-size: 15px; white-space: nowrap; }
+  .row .s { grid-column: 1 / -1; color: var(--muted); font-size: 15.5px; }
+
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; text-align: center; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 40px 16px 64px; }
+    .top { flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+    .top img { width: 160px; height: 160px; }
+    .icons { justify-content: center; }
+    h1 { font-size: 32px; }
+    h1 .kr { display: block; margin: 4px 0 0; font-size: 17px; }
+    ul.news li { grid-template-columns: 1fr; gap: 0; }
+    .row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <img src="profile.jpg" alt="Ki Yong Jung">
+    <div>
+      <h1>Ki Yong Jung<span class="kr">정기용</span></h1>
+      <p class="aff">Undergraduate @ <a href="https://www.skku.edu">Sungkyunkwan University</a>, Software</p>
+      <div class="icons">
+        <a href="mailto:wjdrldyd0213@g.skku.edu" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>
+        </a>
+        <a href="https://github.com/Twave1717" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kiyongj" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </div>
+      <p>I'm interested in AI that learns from the people it works with. Instead of a model that knows everything, I want to build agents that deeply understand one person's work (their projects, decisions and context) and keep improving from it. A central question for me is how to separate the <i>working memory</i> worth learning from information that should stay private.</p>
+    </div>
+  </div>
+
+  <h2>About Me</h2>
+  <p>I'm currently a research intern at the <a href="https://ell.skku.edu"><b>Efficient Learning Lab</b></a> at Sungkyunkwan University, advised by <b>Prof. Hankook Lee</b>. Through the undergraduate research program (URP), I'm working on fusing chart images with time-series inputs to improve performance on <a href="https://arxiv.org/abs/2601.18744">TSRBench</a>.</p>
+  <p>Beyond the lab, my long-term vision is <b>self-evolving AI agents</b>: agents that continually learn a person's <i>working memory</i> and grow alongside them, from a single project to an entire career. As a first step, I'm building AI agents that help academic clubs run their projects, aiming for a system that automatically builds up a club's knowledge as an ontology. So far this includes a <b>curriculum agent</b> that designs club curricula from real job postings and a <b>FactChecker</b> that helps clubs verify what candidates claim in interviews. Alongside these, I'm studying how teams and individuals can build working memory efficiently, so that knowledge accumulates on its own and the next generation can build on it.</p>
+  <p>My interests include:</p>
+  <ul class="interests">
+    <li><b>Self-Evolving AI Agents</b>: agents that learn a person's working memory over time, from projects to an entire career.</li>
+    <li><b>Time-Series Chart Understanding</b>: how multimodal models read and understand time series rendered as charts (TSRBench).</li>
+    <li><b>Efficient Adaptation</b>: few-shot adaptation of vision-language models.</li>
+  </ul>
+
+  <h2>🔥 Recent News</h2>
+  <ul class="news">
+    <li><span class="d">[Sep 2026]</span><span>Our KT Digital Talent team project (AI with KT and the Korea Road Traffic Authority) was selected as the <b>best team</b>. <a href="https://www.linkedin.com/feed/update/urn:li:activity:7500835147173330944/">[Post]</a></span></li>
+    <li><span class="d">[Apr 2026]</span><span><b>MIND</b> accepted to the HCAIR Workshop @ ICLR 2026. <a href="https://arxiv.org/abs/2603.21696">[arXiv]</a> <a href="https://openreview.net/forum?id=9DrWbVOc3h">[OpenReview]</a></span></li>
+    <li><span class="d">[Apr 2026]</span><span>Selected as a <b>SeAH Career Challenge Scholar</b> for <b>WorkMirror</b>, AI interviews grounded in a candidate's real work output.</span></li>
+    <li><span class="d">[Mar 2026]</span><span>Selected as a <b>KT Digital Talent Scholar</b> (full tuition, 3rd–4th year). <a href="https://www.hankyung.com/article/2026032280511">[News]</a></span></li>
+    <li><span class="d">[Feb 2026]</span><span>Joined the <a href="https://ell.skku.edu">Efficient Learning Lab</a> as a research intern, working on time-series chart understanding.</span></li>
+    <li><span class="d">[Jul 2025]</span><span>Joined <a href="https://www.upstage.ai"><b>Upstage</b></a> as an AI Product Data Manager Intern.</span></li>
+    <li><span class="d">[Jul 2025]</span><span>Our table summarization paper was presented at the <b>TRL Workshop @ ACL 2025</b>. <a href="https://aclanthology.org/2025.trl-1.1">[Paper]</a></span></li>
+    <li><span class="d">[Jul 2025]</span><span>Our Korean chart-to-table paper was presented at <b>KCC 2025</b>. <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318750">[Paper]</a></span></li>
+    <li><span class="d">[Dec 2024]</span><span><b>ChartBrain.AI</b> won the Grand Prize (Minister of Science and ICT Award) at the SW-centered University Excellence Awards. <a href="https://www.swuniv.kr/55/?bmode=view&amp;idx=131230831">[Link]</a></span></li>
+    <li><span class="d">[Oct 2024]</span><span><b>Tabular-TX</b> received the Excellent Paper Award at HCLT-KACL 2024. <a href="https://koreascience.kr/article/CFKO202404272003862.page">[Paper]</a></span></li>
+  </ul>
+
+  <h2>💼 Experience</h2>
+  <div class="row">
+    <span class="t">Research Intern · <a href="https://ell.skku.edu">Efficient Learning Lab</a>, SKKU</span><span class="d">Feb 2026 – Present</span>
+    <span class="s">Advisor: Prof. Hankook Lee · Time-Series Chart Understanding, Few-shot Adaptation</span>
+  </div>
+  <div class="row">
+    <span class="t">AI Product Data Manager Intern · Upstage</span><span class="d">Jul 2025 – Jan 2026</span>
+    <span class="s">LLM-based edge-case detection over an 8M-document dataset; VLM-based anomaly detection for irregular documents.</span>
+  </div>
+  <div class="row">
+    <span class="t">Assistant AI Engineer · KIOST</span><span class="d">Apr 2024 – Jun 2025</span>
+    <span class="s">On-prem agentic RAG for maritime research, with LangGraph tools for Text-to-SQL and data analysis.</span>
+  </div>
+  <div class="row">
+    <span class="t">Team Lead · VAIV × SKKU Industry Project</span><span class="d">Apr 2024 – Dec 2024</span>
+    <span class="s">Built ChartBrain.AI, a Korean chart-to-table model (+26 pp accuracy with weakness-focused fine-tuning).</span>
+  </div>
+  <div class="row">
+    <span class="t">Member → Team Lead · SKKAI (SKKU AI Society)</span><span class="d">Sep 2024 – Aug 2026</span>
+    <span class="s">Led member recruiting and semester projects.</span>
+  </div>
+
+  <h2>📝 Selected Publications</h2>
+  <p class="note">* equal contribution</p>
+  <ol class="pubs">
+    <li>
+      <div class="t">MIND: Multi-Agent Inference for Negotiation Dialogue in Travel Planning</div>
+      <div class="a">Hunmin Do, Taejun Yoon, <u>Ki Yong Jung</u></div>
+      <div class="v">HCAIR Workshop @ ICLR 2026 · <span style="font-style:normal"><a href="https://arxiv.org/abs/2603.21696">[arXiv]</a> <a href="https://openreview.net/forum?id=9DrWbVOc3h">[OpenReview]</a></span></div>
+    </li>
+    <li>
+      <div class="t">Advancement of Chart-to-Table Model for Complex Korean Chart Understanding</div>
+      <div class="a"><u>Ki Yong Jung</u>*, Sang Yeop Lee*, Gyu Min Lee*, Heeseon Park</div>
+      <div class="v">KCC 2025, Undergraduate Paper Session · <span style="font-style:normal"><a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318750">[Paper]</a></span></div>
+    </li>
+    <li>
+      <div class="t">Theme-Explanation Structure for Table Summarization using Large Language Models: A Case Study on Korean Tabular Data</div>
+      <div class="a">TaeYoon Kwack*, Jisoo Kim*, <u>Ki Yong Jung</u>, DongGeon Lee, Heesun Park</div>
+      <div class="v">TRL Workshop @ ACL 2025 · <span style="font-style:normal"><a href="https://aclanthology.org/2025.trl-1.1">[Paper]</a> <a href="https://arxiv.org/abs/2501.10487">[arXiv]</a></span></div>
+    </li>
+    <li>
+      <div class="t">Tabular-TX: Theme-Explanation Structure-based Table Summarization via In-Context Learning</div>
+      <div class="a">TaeYoon Kwack, Jisoo Kim, <u>Ki Yong Jung</u>, DongGeon Lee, Heesun Park</div>
+      <div class="v">HCLT-KACL 2024 · <span style="font-style:normal">Excellent Paper Award · <a href="https://koreascience.kr/article/CFKO202404272003862.page">[Paper]</a></span></div>
+    </li>
+  </ol>
+
+  <h2>🏆 Honors</h2>
+  <ul class="news">
+    <li><span class="d">[Apr 2026]</span><span>SeAH Haiam Foundation Career Challenge Scholarship</span></li>
+    <li><span class="d">[Mar 2026]</span><span>KT Digital Talent Scholarship</span></li>
+    <li><span class="d">[Aug 2025]</span><span>SW-centered University Digital Competition, AI Track: Excellence Award <a href="https://www.swuniv.kr/60/?bmode=view&amp;idx=167292634">[Link]</a></span></li>
+    <li><span class="d">[Dec 2024]</span><span>SW-centered University Excellence Awards: Grand Prize (Minister of Science and ICT Award) <a href="https://www.swuniv.kr/55/?bmode=view&amp;idx=131230831">[Link]</a></span></li>
+    <li><span class="d">[Oct 2024]</span><span>HCLT-KACL 2024: Excellent Paper Award</span></li>
+    <li><span class="d">[Sep 2023]</span><span>AI Hub Open Data Idea Competition: Excellence Award</span></li>
+  </ul>
+
+  <footer>© 2026 Ki Yong Jung · Hosted on GitHub Pages</footer>
+</div>
+</body>
+</html>
